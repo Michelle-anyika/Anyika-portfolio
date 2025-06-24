@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="moving-text">Anyika Michelle</h1>
+    <button id="toggleNav">☰ Menu</button>
+    <nav id="navMenu" class="hidden">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="home-container">
+        <img src="anika.jpg" alt="My Photo" class="home-img" />
+        <div class="home-description">
+          <h2 class="typing">Hi, I'm Anyika Michelle</h2>
+          <p>A passionate software engineer and entrepreneur aiming to empower youth with entrepreneurial and job creation skills through mentorship.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <h3>this is the skills that i've got</h3>
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Vue.js</div>
+        <div class="skill">AI in use</div>
+        <div class="skill">power point</div>
+        <div class="skill">MS word</div>
+        <div class="skill">enterpretation</div>
+        <div class="skill">leadership</div>
+        <div class="skill">active listening</div>
+        <div class="skill">problem solving</div>
+        <div class="skill">team working</div>
+        <div class="skill">project management</div>
+        <div class="skill">python</div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <img src="q4.jpg" alt="Experience" />
+        <h3>Software Engineering student at ALU</h3>
+        <p>Worked on front-end projects using HTML, CSS, and JavaScript.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <details open>
+        <summary>ALU - Software Engineering</summary>
+        <p>
+          2024_ present
+          Studying full stack development with a focus on real-world projects.
+        </p>
+      </details>
+      <details>
+        <summary>MCE - Mbogo Secondary School</summary>
+        <p>
+          2020 _ 2023
+          mathematics, economic and computer science. used to solve real world probrems.
+        </p>
+      </details>
+      <details>
+        <summary>Ordinary level - Mbogo Secondary School</summary>
+        <p>
+          2017 _ 2019
+          all possible subject before choosing career were there.
+        </p>
+      </details>
+      <details>
+        <summary>Primary - G.S.BUTARE Catholic</summary>
+        <p>
+          2011 _ 2016
+          primary level of education, where i found basic skills.
+        </p>
+      </details>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <img src="proje-f.png" alt="Fruit of Love" />
+          <h3>Fruit of Love Family</h3>
+          <p> this is un complete progressing website i built for charity familly which is called fruit of love. please visit us by clicking the link below for more descriptions</p>
+          <a href="https://michelle-4.vercel.app/" target="_blank">View Project</a>
+        </div>
+        <div class="card">
+          <img src="portf.png" alt="Resume Website" />
+          <h3>Responsive Resume Website</h3>
+          <p>Created a fully responsive and stylish resume website using pure HTML, CSS, and JS.</p>
+          <a href="https://about-me-nine-beta.vercel.app/" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements">
+  <h2>Achievements</h2>
+  <div class="achievement-cards">
+    <div class="card">
+      <img src="python1.png" alt="coursera python" />
+      <h3>Python Programming Fundamentals <strong>Coursera</strong></h3>
+      <p>I got this certificate after completing the course and implementing what I studied, including building an application as proof.</p>
+    </div>
+    <div class="card">
+      <img src="python2.png" alt="python Certificate" />
+      <h3>Web Development with Python</h3>
+      <p>Earned a certificate for completing an advanced web development course.</p>
+    </div>
+    <div class="card">
+      <img src="AICE.png" alt="ALX Certificate" />
+      <h3>AICE</h3>
+      <p>Completed the Artificial Intelligence course at ALX.</p>
+    </div>
+    <div class="card">
+      <img src="SQL.png" alt="SQL Certificate" />
+      <h3>SQL</h3>
+      <p>Earned a certificate for completing the Structured Query Language course at DataCamp as a Cedar Scholar.</p>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anyika Michelle | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
