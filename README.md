@@ -1,1 +1,1 @@
-# Anyika-portfolio
+This is my personal resume website built with pure HTML, CSS, and JavaScript. It showcases my skills, education, projects, achievements, and contact info. The site is fully responsive and interactive, designed from scratch without any frameworks. It reflects my growth as a developer and serves as a professional digital CV.
