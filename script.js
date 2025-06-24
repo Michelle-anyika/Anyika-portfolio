@@ -3,8 +3,20 @@
 // Toggle nav visibility
 const toggleNav = document.getElementById('toggleNav');
 const navMenu = document.getElementById('navMenu');
+
+// Handle menu toggle
 toggleNav.addEventListener('click', () => {
   navMenu.classList.toggle('hidden');
+  navMenu.classList.toggle('active');
+});
+
+// Close menu on link click for better UX on mobile
+const navLinks = navMenu.querySelectorAll('a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.add('hidden');
+    navMenu.classList.remove('active');
+  });
 });
 
 // Accordion logic: improved true accordion behavior

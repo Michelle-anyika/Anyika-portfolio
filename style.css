@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #ffe6f0; /* soft white-pink background */
+  background-color: #ffe6f0;
   color: #333;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -12,7 +12,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #ff69b4; /* bright pink */
+  background: #ff69b4;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -30,8 +30,8 @@ header h1 {
 }
 
 @keyframes slideIn {
-  0% {transform: translateX(100%);}
-  100% {transform: translateX(-100%);}
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
 
 #toggleNav {
@@ -40,15 +40,12 @@ header h1 {
   font-size: 24px;
   color: white;
   cursor: pointer;
+  display: none; /* hidden on desktop */
 }
 
 nav {
   display: flex;
   gap: 10px;
-}
-
-nav.hidden {
-  display: none;
 }
 
 nav a {
@@ -57,14 +54,39 @@ nav a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  #toggleNav {
+    display: block; /* show hamburger on mobile */
+  }
+
+  nav {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #ff69b4;
+    padding: 10px;
+    border-radius: 8px;
+    display: none;
+    width: max-content;
+  }
+
+  nav.show {
+    display: flex !important;
+  }
+
+  nav a {
+    padding: 8px 0;
+  }
+}
+
 main > section {
-  padding: 60px 20px;
-  min-height: 100vh;
+  padding: 30px 20px;
 }
 
 main {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   max-width: 1200px;
   margin: auto;
 }
@@ -140,7 +162,6 @@ main {
   max-width: 350px;
 }
 
-/* Accordion Styling */
 details {
   border: 2px solid #ff69b4;
   background-color: #fff0f5;
@@ -166,7 +187,6 @@ details p {
   margin-top: 10px;
 }
 
-/* Contact Form Styling */
 #contact {
   background: #ffe0ec;
   padding: 60px 20px;
@@ -225,31 +245,4 @@ footer {
   font-size: 14px;
   z-index: 999;
   color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .home-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-cards,
-  .achievement-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  nav {
-    flex-direction: column;
-    background-color: #ff69b4;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    padding: 10px;
-    border-radius: 8px;
-  }
 }
